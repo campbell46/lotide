@@ -1,6 +1,3 @@
-const { assertEqual } = require('./assertEqual');
-const { assertArraysEqual } = require('./assertArraysEqual');
-
 const middle = function(arr) {
   let output = [];
   //variable to get the index of the middle element - 1 if even
@@ -17,6 +14,4 @@ const middle = function(arr) {
   return output;
 };
 
-assertEqual(assertArraysEqual(middle([1]), []), true);
-assertEqual(assertArraysEqual(middle([1, 2]), []), true);
-assertEqual(assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]), true);
+module.exports = middle;
