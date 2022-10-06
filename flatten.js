@@ -1,20 +1,6 @@
-const eqArrays = function(arr1, arr2) {
-  //return false if array values do not equal
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const { assertEqual } = require('./assertEqual');
+const { assertArraysEqual } = require('./assertArraysEqual');
 
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`✅✅✅ Assertion Passsed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
 
 const flatten = function(arr) {
   let flattenedArr = [];
@@ -33,4 +19,4 @@ const flatten = function(arr) {
   return flattenedArr;
 };
 
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
+assertEqual(assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]), true);
