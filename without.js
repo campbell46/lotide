@@ -1,6 +1,3 @@
-const { assertEqual } = require('./assertEqual');
-const { assertArraysEqual } = require('./assertArraysEqual');
-
 const without = function(arr, rem) {
   let newArray = [];
   //loop through aray, pushing every element to newArray
@@ -15,9 +12,5 @@ const without = function(arr, rem) {
   }
   return newArray;
 };
-
-// const words = ["hello", "world", "lighthouse"];
-// without(words, ["lighthouse"]);
-// assertEqual(assertArraysEqual(words, ["hello", "world", "lighthouse"]), true);
 
 module.exports = without;

@@ -1,6 +1,3 @@
-const { assertEqual } = require('./assertEqual');
-const { assertArraysEqual } = require('./assertArraysEqual');
-
 let words = ["ground", "control", "to", "major", "tom"];
 
 const map = function(array, callback) {

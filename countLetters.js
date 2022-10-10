@@ -1,5 +1,3 @@
-const { assertEqual } = require('./assertEqual');
-
 const countLetters = function(sentence) {
   let results = {};
   //loop through each letter in sentence
@@ -18,12 +16,5 @@ const countLetters = function(sentence) {
   }
   return results;
 };
-
-const result1 = countLetters("lighthouse in the house");
-
-// assertEqual(result1["l"], 1);
-// assertEqual(result1["i"], 2);
-// assertEqual(result1["h"], 4);
-// assertEqual(result1[" "], undefined);
 
 module.exports = countLetters;

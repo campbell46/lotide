@@ -1,6 +1,11 @@
-const assertEqual = require('../assertEqual');
-const eqArrays = require('../eqArrays');
-const flatten = require('../flatten');
+const assert = require('chai').assert;
+const _ = require('../index');
 
-assertEqual(eqArrays([1,2,3], [1,2,3]), true);
-assertEqual(eqArrays(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]), true);
+describe("#eqArrays", () => {
+  it("return true if arrays match", () => {
+    assert.strictEqual(_.eqArrays([1,2,3], [1,2,3]), true);
+  });
+  it("return true if arrays match", () => {
+    assert.strictEqual(_.eqArrays(_.flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]), true);
+  });
+});
