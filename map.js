@@ -11,4 +11,6 @@ const map = function(array, callback) {
   return results;
 };
 
-assertEqual(assertArraysEqual(map(words, word => word[0]), ['g', 'c', 't', 'm', 't']), true);
+// assertEqual(assertArraysEqual(map(words, word => word[0]), ['g', 'c', 't', 'm', 't']), true);
+
+module.exports = map;

@@ -9,6 +9,8 @@ const findKey = function(object, callback) {
   }
 };
   
-assertEqual(findKey({ "Blue Hill": { stars: 1 }, "Akaleri": { stars: 3 }, "noma": { stars: 2 },"elBulli": { stars: 3 }, "Ora": { stars: 2 }, "Akelarre": { stars: 3 }}, x => x.stars === 2), 'noma');
+// assertEqual(findKey({ "Blue Hill": { stars: 1 }, "Akaleri": { stars: 3 }, "noma": { stars: 2 },"elBulli": { stars: 3 }, "Ora": { stars: 2 }, "Akelarre": { stars: 3 }}, x => x.stars === 2), 'noma');
 
-assertEqual(findKey({ "Mazda": {model: 'CX-5'}, "Honda": {model: 'Civic'}, "Ford": {model: 'F150'}, "Jeep": {model: 'wrangler'}, "Chevrolet": {model: 'Equinox'}}, x => x.model === 'wrangler'), 'Jeep');
+// assertEqual(findKey({ "Mazda": {model: 'CX-5'}, "Honda": {model: 'Civic'}, "Ford": {model: 'F150'}, "Jeep": {model: 'wrangler'}, "Chevrolet": {model: 'Equinox'}}, x => x.model === 'wrangler'), 'Jeep');
+
+module.exports = findKey;

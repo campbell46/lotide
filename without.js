@@ -16,6 +16,8 @@ const without = function(arr, rem) {
   return newArray;
 };
 
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]);
-assertEqual(assertArraysEqual(words, ["hello", "world", "lighthouse"]), true);
+// const words = ["hello", "world", "lighthouse"];
+// without(words, ["lighthouse"]);
+// assertEqual(assertArraysEqual(words, ["hello", "world", "lighthouse"]), true);
+
+module.exports = without;

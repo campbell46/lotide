@@ -21,4 +21,6 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-assertEqual(assertArraysEqual(letterPositions("hello").h, [0]), true);
+// assertEqual(assertArraysEqual(letterPositions("hello").h, [0]), true);
+
+module.exports = letterPositions;
