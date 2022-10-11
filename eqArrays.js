@@ -1,3 +1,4 @@
+//function takes in 2 arrays, tests if they are equal
 const eqArrays = function(arr1, arr2) {
   //return false if arrays are not same length
   if (arr1.length !== arr2.length) {
@@ -9,6 +10,7 @@ const eqArrays = function(arr1, arr2) {
       return false;
     }
   }
+  //if both arrays are equal return true
   return true;
 };
 
