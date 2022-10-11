@@ -14,9 +14,9 @@ const eqArrays = require('./eqArrays');
 const eqObjects = require('./eqObjects');
 
 module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
+  head,
+  tail,
+  middle,
   countOnly,
   countLetters,
   findKey,
@@ -26,6 +26,6 @@ module.exports = {
   map,
   takeUntil,
   without,
-  eqArrays,
-  eqObjects
+  eqObjects,
+  eqArrays
 };

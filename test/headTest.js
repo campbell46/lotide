@@ -1,11 +1,12 @@
 const assert = require('chai').assert;
 const _ = require('../index');
 
+//test function, returns first element of array
 describe("#head", () => {
-  it("returns 1 for [1, 2 ,3]", () => {
+  it("returns first element of array", () => {
     assert.strictEqual(_.head([1, 2, 3]), 1);
   });
-  it("returns '5' for ['5']", () => {
+  it("returns first element of array with one element", () => {
     assert.strictEqual(_.head(['5']), '5');
   });
 });

@@ -1,3 +1,4 @@
+//function takes in 2 collections of items, returns a count of selected items
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
   //loop through allItems
@@ -13,6 +14,11 @@ const countOnly = function(allItems, itemsToCount) {
       }
     }
   }
+  //if results is empty, return undefined
+  if (Object.keys(results).length === 0) {
+    return undefined;
+  }
+  //return new object containing item count
   return results;
 };
 

@@ -1,5 +1,7 @@
+//function takes in an array and flattens any arrays within it
 const flatten = function(arr) {
   let flattenedArr = [];
+  //loop through array
   for (let i = 0; i < arr.length; i++) {
     //if element is not an array, push to flattenedArr
     if (!Array.isArray(arr[i])) {
@@ -12,6 +14,7 @@ const flatten = function(arr) {
       }
     }
   }
+  //return new flattened array
   return flattenedArr;
 };
 

@@ -1,3 +1,4 @@
+//function takes in a sentence and returns an object containing the index of each character
 const letterPositions = function(sentence) {
   const results = {};
   //loop through each character
@@ -14,6 +15,7 @@ const letterPositions = function(sentence) {
       results[sentence[i]] = [i];
     }
   }
+  //return new object with character index'
   return results;
 };
 
